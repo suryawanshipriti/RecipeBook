@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadRecipes()">
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Food Recipes</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="add-recipe.html" class="btn">Add Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Food Recipes</h2>
+        <p>Discover the best recipes for your favorite dishes!</p>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes">
+        <h2>Our Recipes</h2>
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search for a recipe..." onkeyup="searchRecipe()">
+
+        <!-- Recipe Cards -->
+        <div id="recipe-list">
+            <!-- Existing Recipes -->
+            <div class="recipe-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsMDOhnwuBvl0pcN14PofKJWPFM0tJHWfJg&s" alt="Spaghetti Carbonara">
+                <h3>Spaghetti Carbonara</h3>
+                <p>A quick and delicious Italian recipe.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>A rich and moist dessert for chocolate lovers.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('https://media.istockphoto.com/id/1446478805/photo/a-chef-is-finishing-the-preparation-of-the-plate.jpg?s=612x612&w=0&k=20&c=OoFoYYJ0_eun72wlt-lDzlYjY-CaLwphDgUyIApDu_I='); background-size: cover; background-position: center; background-attachment: fixed; margin: 0; font-family: Arial, sans-serif;">
+
+    <header>
+        <nav>
+            <h1>Add New Recipe</h1>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="add-recipe">
+        <h2 style="color: white;">Add Your Recipe</h2>
+        <input type="text" id="recipe-name" placeholder="Recipe Name">
+        <input type="text" id="recipe-description" placeholder="Recipe Description">
+        <input type="url" id="recipe-image" placeholder="Recipe Image URL">
+        <button onclick="saveRecipe()">Save Recipe</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
